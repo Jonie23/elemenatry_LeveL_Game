@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Game</title>
+
+    <link href = "https://fonts.googleapis.com/css2? family = Lobster & display = swap" rel = "stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        Math Game for elementary level
+    </header>
+    <div class="content">
+        <p>This is a game intended to help better the Math prowess of elementary children 
+            during this stay-home period. 
+        </p>
+        <p>It comprises three arithmetic sections namely;
+            <br>
+            Addition, Subtraction and Division.
+        </p>
+        <p> A click on each section provides 5 pop-up questions, 
+            <br>which a player will be required to answer.
+        </p>
+        <p>Afterwards, click on the check score button to tabulate your score in percentages.</p>
+            
+        <input type= button value="add()" onclick="add()">
+        <input type="button" value="subtract()" onclick="subtract()">
+        <input type="button" value="multiply()" onclick="multiply()">
+        <br>
+        <input type="button" value="Check Score(%)" class="checkScore" onclick="totalScore()">
+        
+        <div class="text">
+           <p>Current Score: <div id="score"></div> </p>
+            <p>Your Total Score is: <div id="totalScore"></div></p>
+        </div>    
+    </div>
+</body>
+</html>
